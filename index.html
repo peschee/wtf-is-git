@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+<<<<<<< HEAD
 	<title>Shower Presentation Engine</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
@@ -132,5 +133,184 @@
 	<script src="shower/shower.min.js"></script>
 	<!-- Copyright © 2010–2013 Vadim Makeev — pepelsbey.net -->
 	<!-- Photos by John Carey — fiftyfootshadows.net -->
+=======
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <link rel="stylesheet" href="shower/themes/custom/styles/screen.css">
+    <!--
+        To apply styles to the certain slides
+        set slide ID to get needed elements
+        -->
+    <style>
+        #Picture h2 {
+            color:#FFF;
+        }
+    </style>
+</head>
+<body class="list">
+
+    <header class="caption">
+        <h1><strong>VCS</strong> or what the heck is git?</h1>
+        <p><a href="http://pesche.me/">Peter Siska</a>, <a href="http://gridonic.ch">Gridonic</a></p>
+    </header>
+
+    <section class="slide cover supercover">
+        <img src="pictures/wtf-git.png" alt="" />
+    </section>
+
+    <section class="slide shout"><div>
+        <h2><strong>VCS</strong> =<br /><span class="smaller"><b>V</b>ersion <b>C</b>ontrol <b>S</b>ystem</span></h2>
+        <h3>[ Versionierungssystem ]</h3>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h2>Versions?</h2>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>One User</h2>
+        <p><img src="pictures/single-user.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Challenges</h2>
+        <ul>
+            <li>Revert to a previous version of a file?</li>
+            <li>Display differences between two versions?</li>
+        </ul>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Multiple Users (individual copy)</h2>
+        <p><img src="pictures/multi-user-individual.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Challenges</h2>
+        <ul>
+            <li>Merging changes?</li>
+            <li>Retrieving previous versions?</li>
+        </ul>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Multiple Users (common copy)</h2>
+        <p><img src="pictures/multi-user-common.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Challenges</h2>
+        <ul>
+            <li>Server load</li>
+            <li>Performance</li>
+            <li>Previous versions?</li>
+            <li>Differences</li>
+            <li><strong>Concurrency!</strong></li>
+        </ul>
+    </div></section>
+
+    <section class="slide cover supercover">
+        <img src="pictures/versions.jpg" alt="" />
+    </section>
+
+    <section class="slide single-pic"><div>
+        <h2>One User</h2>
+        <p><img src="pictures/single-user-vcs.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Multiple Users</h2>
+        <p><img src="pictures/multi-user-individual-vcs.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h2>Free Goodies!</h2>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Diffs &amp; (auto) Merging</h2>
+        <p><img src="pictures/diffs.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Revision history</h2>
+        <p><img src="pictures/tig.png" alt="" class="place m" /></p>
+    </div></section>
+
+    <section class="slide "><div>
+        <h2>Others</h2>
+        <ul>
+            <li>Performance</li>
+            <li>Concurrency</li>
+            <li>Automatic backups</li>
+        </ul>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Different VCS?</h2>
+        <ul>
+            <li>Centralized</li>
+            <li>Distributed / Decentralized</li>
+        </ul>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Centralized</h2>
+        <p><img src="pictures/vcs-centralized.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Distributed</h2>
+        <p><img src="pictures/vcs-distributed.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>History / Comparison</h2>
+        <p><img src="pictures/history.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Git</h2>
+        <figure>
+            <blockquote>
+                <p>In software development, Git (/ɡɪt/) is a distributed revision control and source code management (SCM) system with an emphasis on speed. Initially designed and developed by Linus Torvalds for Linux kernel development, Git has since been adopted by many other projects.</p>
+            </blockquote>
+            <figcaption>Wikipedia</figcaption>
+        </figure>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Github</h2>
+        <p><img src="pictures/github.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Github</h2>
+        <ul>
+            <li>Web-based hosting service</li>
+            <li>Gazillion open source projects</li>
+            <li>Nice interface</li>
+            <li>Lots of features (wiki, tickets, pages...)</li>
+            <li>Public (free) + private (paid) repositories</li>
+            <li><a href="http://peschee.github.com/wtf-is-git/">This presentation is on github!</a></li>
+            <li><span class="smaller">received US$100 million in Series A funding</span></li>
+        </ul>
+    </div></section>
+
+    <section class="slide cover supercover">
+        <img src="pictures/chuck.jpg" alt="" />
+    </section>
+
+   <p class="badge"><a href="https://github.com/peschee/wtf-is-git">Fork me on Github</a></p>
+
+    <!--
+        To hide progress bar from entire presentation
+        just remove “progress” element.
+        -->
+    <div class="progress"><div></div></div>
+
+    <script src="shower/shower.js"></script>
+>>>>>>> develop
 </body>
 </html>
