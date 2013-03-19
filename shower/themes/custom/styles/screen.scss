@@ -76,13 +76,14 @@ a {
     &:after {
         position:absolute;
         right:0;
-        bottom:45px;
+        bottom:20px;
         left:0;
         color:#CCC;
         counter-increment:slide;
         content:counter(slide);
         text-align:center;
         line-height:1;
+        z-index: 2;
         }
     // Inner
     > div {
@@ -268,6 +269,16 @@ h1, h2, h3, h4 {
                 }
             }
         }
+
+    &.single-pic {
+        h2 {
+            margin-bottom: 0;
+        }
+
+        img {
+            z-index: 10;
+        }
+    }
     // Shout
     &.shout {
         background:$color;
@@ -499,3 +510,24 @@ h1, h2, h3, h4 {
 .small { font-size: 85% }
 .smaller { font-size: 65%; font-weight: normal; }
 .spaced { letter-spacing: 0.05em; }
+
+.slide.supercover {
+    text-align: center;
+
+    img {
+        height: 100%;
+        position: relative;
+    }
+
+    div {
+        padding: 0;
+        width: 100%;
+    }
+
+    h2 {
+        margin:45px 0 0;
+        color:#FFF;
+        text-align:center;
+        font-size:80px;
+    }
+}

@@ -10,23 +10,6 @@
         set slide ID to get needed elements
         -->
     <style>
-        #Cover {
-            text-align: center;
-        }
-        #Cover img {
-            height: 100%;
-            position: relative;
-        }
-        #Cover div {
-            padding: 0;
-            width: 100%;
-        }
-        #Cover h2 {
-            margin:45px 0 0;
-            color:#FFF;
-            text-align:center;
-            font-size:80px;
-        }
         #Picture h2 {
             color:#FFF;
         }
@@ -39,7 +22,7 @@
         <p><a href="http://pesche.me/">Peter Siska</a>, <a href="http://gridonic.ch">Gridonic</a></p>
     </header>
 
-    <section class="slide cover" id="Cover">
+    <section class="slide cover supercover">
         <img src="pictures/wtf-git.png" alt="" />
     </section>
 
@@ -52,51 +35,74 @@
         <h2>Versions?</h2>
     </div></section>
 
-    <section class="slide"><div>
-        <h2>Development - One User</h2>
+    <section class="slide single-pic"><div>
+        <h2>One User</h2>
+        <p><img src="pictures/single-user.png" alt="" class="place b" /></p>
     </div></section>
 
     <section class="slide"><div>
-        <h2>Problems</h2>
-    </div></section>
-
-    <section class="slide"><div>
-        <h2>Development - Multiple Users</h2>
-        <h3>(individual copy)</h3>
-    </div></section>
-
-    <section class="slide"><div>
-        <h2>Problems</h2>
-    </div></section>
-
-    <section class="slide"><div>
-        <h2>Development - Multiple Users</h2>
-        <h3>(common copy)</h3>
-    </div></section>
-
-    <section class="slide"><div>
-        <h2>Problems</h2>
-    </div></section>
-
-    <section class="slide"><div>
-        <h2>Versions to the rescue!</h2>
-    </div></section>
-
-    <section class="slide"><div>
-        <h2>Development - One User</h2>
-    </div></section>
-
-    <section class="slide"><div>
-        <h2>Development - Multiple Users</h2>
-    </div></section>
-
-    <section class="slide"><div>
-        <h2>Free Goodies</h2>
+        <h2>Challenges</h2>
         <ul>
-            <li>Diff</li>
-            <li>Merge conflicts</li>
-            <li>Merge conflicts</li>
+            <li>Revert to a previous version of a file?</li>
+            <li>Display differences between two versions?</li>
         </ul>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Multiple Users (individual copy)</h2>
+        <p><img src="pictures/multi-user-individual.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Challenges</h2>
+        <ul>
+            <li>Merging changes?</li>
+            <li>Retrieving previous versions?</li>
+        </ul>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Multiple Users (common copy)</h2>
+        <p><img src="pictures/multi-user-common.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide"><div>
+        <h2>Challenges</h2>
+        <ul>
+            <li>Server load</li>
+            <li>Performance</li>
+            <li>Previous versions?</li>
+            <li>Differences</li>
+            <li><strong>Concurrency!</strong></li>
+        </ul>
+    </div></section>
+
+    <section class="slide cover supercover">
+        <img src="pictures/versions.jpg" alt="" />
+    </section>
+
+    <section class="slide single-pic"><div>
+        <h2>One User</h2>
+        <p><img src="pictures/single-user-vcs.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Multiple Users</h2>
+        <p><img src="pictures/multi-user-individual-vcs.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide shout"><div>
+        <h2>Free Goodies!</h2>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Diffs &amp; Merging</h2>
+        <p><img src="pictures/diffs.png" alt="" class="place b" /></p>
+    </div></section>
+
+    <section class="slide single-pic"><div>
+        <h2>Revision history</h2>
+        <p><img src="pictures/diffs.png" alt="" class="place b" /></p>
     </div></section>
 
     <section class="slide"><div>
@@ -163,6 +169,6 @@
         -->
     <div class="progress"><div></div></div>
 
-    <script src="shower/shower.min.js"></script>
+    <script src="shower/shower.js"></script>
 </body>
 </html>

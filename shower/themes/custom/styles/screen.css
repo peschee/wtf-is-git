@@ -136,21 +136,22 @@ a {
   .slide:after {
     position: absolute;
     right: 0;
-    bottom: 45px;
+    bottom: 20px;
     left: 0;
     color: #CCC;
     counter-increment: slide;
     content: counter(slide);
     text-align: center;
-    line-height: 1; }
+    line-height: 1;
+    z-index: 2; }
   .slide > div {
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
-    padding: 100px 96px 0 128px;
+    padding: 72px 96px 0 128px;
     width: 800px;
-    height: 540px; }
+    height: 568px; }
   .debug .slide {
     background-image: url(../images/grid-16x10.svg); }
 
@@ -282,6 +283,10 @@ h1.white, h2.white, h3.white, h4.white {
     -ms-transform: none;
     -o-transform: none;
     transform: none; }
+.slide.single-pic h2 {
+  margin-bottom: 0; }
+.slide.single-pic img {
+  z-index: 10; }
 .slide.shout {
   background: #52a2df; }
   .slide.shout h2 {
@@ -519,3 +524,17 @@ h1.white, h2.white, h3.white, h4.white {
 
 .spaced {
   letter-spacing: 0.05em; }
+
+.slide.supercover {
+  text-align: center; }
+  .slide.supercover img {
+    height: 100%;
+    position: relative; }
+  .slide.supercover div {
+    padding: 0;
+    width: 100%; }
+  .slide.supercover h2 {
+    margin: 45px 0 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 80px; }
